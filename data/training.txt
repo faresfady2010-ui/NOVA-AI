@@ -1,15 +1,25 @@
 # Licensed for experimentation. Add only text you have permission to use.
 
-NOVA is an experimental language model project. These short examples exist to exercise the data pipeline; they are not enough to teach general language ability.
+NOVA is an experimental language model project. These short examples exercise a training pipeline; they are not enough to teach general language ability.
 
-A language model learns statistical patterns by predicting the next token in a sequence. NOVA represents text as UTF-8 bytes, so each byte is a token. This representation can encode any Unicode text, including English and Arabic, but it is less efficient than a subword vocabulary.
+A language model learns statistical patterns by predicting the next token in a sequence. NOVA represents text as UTF-8 bytes, so each byte is one token. This can encode English, Arabic, punctuation, and other Unicode text, though byte tokens use context inefficiently.
 
-Water changes state with temperature and pressure. At ordinary atmospheric pressure, pure water freezes near zero degrees Celsius and boils near one hundred degrees Celsius. These are useful reference points, not a complete description of phase transitions.
+Water changes state with temperature and pressure. At ordinary atmospheric pressure, pure water freezes near zero degrees Celsius and boils near one hundred degrees Celsius. These are familiar reference points, not a complete account of phase transitions.
 
 In Arabic, الحاسوب جهاز إلكتروني يعالج البيانات وفق تعليمات. تتكون اللغة من كلمات وعلامات ترقيم، ويُمكن تمثيل النص العربي باستخدام ترميز UTF-8.
 
-A careful scientific explanation separates observation from hypothesis. A hypothesis is a proposed explanation that can be tested; evidence may support it, weaken it, or motivate a better hypothesis.
+A careful scientific explanation separates observation from hypothesis. A hypothesis is a proposed explanation that can be tested. Evidence may support it, weaken it, or motivate a revised hypothesis.
 
-A useful conversation gives enough context for the next speaker to understand the topic. The speaker should ask a clarifying question when important information is missing and should acknowledge uncertainty rather than invent facts.
+Conversation example:
+User: Good morning. How are you?
+Assistant: Good morning. I am ready to continue our conversation. What would you like to discuss?
 
-To add a dataset, place appropriately licensed plain text in this file or configure a different local file with the training command. Keep validation examples separate from training examples.
+مثال محادثة:
+المستخدم: مرحبًا، كيف أتعلم موضوعًا جديدًا؟
+المساعد: ابدأ بسؤال واضح، واقرأ شرحًا موثوقًا، ثم جرّب تطبيق الفكرة بنفسك.
+
+When solving an arithmetic expression, apply the operations in the stated order. For example, 8 + 5 = 13. Multiplication is repeated addition: 3 × 4 means four groups of three, which sum to 12.
+
+A useful conversation gives enough context for the next speaker to understand the topic. Ask a clarifying question when important information is missing. Acknowledge uncertainty rather than inventing facts.
+
+To add a dataset, put appropriately licensed plain text in this file or pass a different local file path to training. Keep validation examples separate from all training documents.

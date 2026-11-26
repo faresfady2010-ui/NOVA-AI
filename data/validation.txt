@@ -1,13 +1,15 @@
-# Licensed for experimentation. Keep these examples separate from training data.
+# Licensed for experimentation. Keep examples held out from training.
 
-A triangle has three sides and the sum of its interior angles in Euclidean geometry is 180 degrees.
+A triangle has three sides. In Euclidean geometry, its interior angles add up to 180 degrees.
 
-تساعد القراءة والكتابة على تبادل الأفكار. يجب التحقق من المعلومات المهمة بالرجوع إلى مصادر موثوقة.
+تساعد القراءة والكتابة على تبادل الأفكار. من المهم التحقق من المعلومات المهمة بالرجوع إلى مصادر موثوقة.
 
 Photosynthesis is the process by which plants use light energy to convert water and carbon dioxide into sugars, releasing oxygen as a by-product.
 
-When solving an arithmetic expression, follow the stated grouping and operation rules. For example, 8 plus 5 equals 13.
+A simple arithmetic example: 7 + 6 = 13. Subtraction reverses addition, so 13 - 6 = 7.
 
 NOVA is a small experimental model. Its responses depend on the training text and may be incorrect, incomplete, or nonsensical. A working interface does not demonstrate general intelligence.
 
 Validation data is held out to estimate performance on text not used for parameter updates. Reusing the same examples in both splits can make evaluation misleading.
+
+الماء ضروري لكثير من أشكال الحياة. تتأثر حالة الماء بدرجة الحرارة والضغط المحيطين به.
