@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101114"><title>NOVA — Experimental AI</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">✦</div><div><strong>NOVA</strong><small>LOCAL LANGUAGE MODEL</small></div></div>
+      <button class="new-chat" id="newChat">＋ <span>New conversation</span></button>
+      <div class="side-label">RECENT</div><div class="history-list" id="historyList"></div>
+      <div class="sidebar-bottom"><span class="status-dot"></span><span>Experimental model</span><button id="clearAll" title="Clear conversations">Clear</button></div>
+    </aside>
+    <main class="main-panel">
+      <header class="topbar"><button class="mobile-menu" id="menuToggle" aria-label="Toggle sidebar">☰</button><div class="model-pill"><span class="status-dot"></span> NOVA <span class="pill-sub">EXPERIMENTAL</span></div><button class="settings-toggle" id="settingsToggle">⚙ <span>Settings</span></button></header>
+      <section class="settings-panel hidden" id="settingsPanel"><label>Temperature <output id="tempValue">0.8</output><input id="temperature" type="range" min="0.1" max="2" step="0.1" value="0.8"></label><label>Response length <select id="responseLength"><option value="80">Short</option><option value="160" selected>Standard</option><option value="300">Long</option></select></label></section>
+      <div class="chat-scroll" id="chatScroll"><div class="welcome" id="welcome"><div class="welcome-icon">✦</div><p class="eyebrow">A MODEL THAT STARTS FROM SCRATCH</p><h1>Meet NOVA.</h1><p class="welcome-copy">An experimental language model trained from scratch. Its abilities depend on the data it has learned from; responses may be incorrect or incomplete.</p><div class="notice">NOVA is not connected to commercial AI services and has not been pretrained.</div></div><div class="messages" id="messages" aria-live="polite"></div></div>
+      <div class="composer-wrap"><form class="composer" id="chatForm"><textarea id="messageInput" rows="1" placeholder="Message NOVA..." aria-label="Message NOVA"></textarea><button class="send-button" id="sendButton" aria-label="Send message">↑</button></form><div class="composer-caption">NOVA can make mistakes. Verify important information.</div></div>
+    </main>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
